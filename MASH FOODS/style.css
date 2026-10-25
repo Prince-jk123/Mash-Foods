@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: arial, sans-serif;
+}
+
+img{
+    width: 100%;
+
+}
+
+.logo img{
+    width: 150px;
+}
+
+.logo{
+    text-align: center;
+}
+
+nav{
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(235, 226, 226);
+}
+
+.banner{
+    height: 400px;
+    background-image: url(./IMAGES/background.jpeg);
+    position: relative;
+}
+
+.banner button{
+    background-color: skyblue;
+    border-radius: 10px;
+    padding: 10px 40px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+
+}
+
+
+.introduction{
+    background-color: blueviolet;
+    text-align: center;
+    margin: 12px 0;
+}
+
+.products{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.dine{
+    text-align: center;
+    margin: 20px;
+}
+
+.dine img{
+    width: 300px;
+    height: 200px;
+}
+
+.dine p{
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.delivery{
+    text-align: center;
+    margin: 20px;
+}
+
+.delivery img{
+    width: 300px;
+    height: 200px;
+}
+
+.delivery p{
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.menu{
+    text-align: center;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(235, 226, 226);
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.menu img{
+    width: 30%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.menu h1{
+    font-size: 1.2rem;
+    margin: 10px 10px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+}
+
+.review{
+    margin: 0 auto 20px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.form, .content{
+    flex: 1;
+}
+
+.form textarea, .form input{
+    display: block;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+
+}
+
+form textarea{
+    height: 100px;
+}
+
+footer{
+    background-color: rgb(235, 226, 226);
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+@media (max-width: 750px) {
+    .products{
+        flex-direction: column;
+    }
+
+    .dine img, .delivery img{
+        width: 100%;
+        height: auto;
+    }
+
+    .menu img{
+        width: 100%;
+        height: auto;
+    }
+
+    .review{
+        flex-direction: column;
+    }
+    
+}
+
+
